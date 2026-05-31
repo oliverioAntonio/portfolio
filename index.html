@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Portfolio di Antonio Davide Oliverio — Full-Stack .NET / Blazor e RPA Developer."/>
+  <title>Antonio Davide Oliverio | Full-Stack .NET & RPA Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<canvas id="hero-canvas" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="#top" aria-label="Torna all'inizio">
+    <div class="brand-mark"><span>AO</span></div>
+    <span class="brand-name">Antonio Oliverio</span>
+  </a>
+  <nav class="site-nav" aria-label="Navigazione principale">
+    <a href="#clepsydra">Clepsydra</a>
+    <a href="#progetti">Progetti</a>
+    <a href="#stack">Stack</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+  <div class="header-links">
+    <a href="https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://reeng.tech/it/" target="_blank" rel="noopener" class="icon-link" aria-label="Reengineering srl">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Apri menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Full-Stack .NET / Blazor &middot; RPA Developer</p>
+        <h1 id="hero-title">
+          <span class="h1-line">Antonio</span>
+          <span class="h1-line gradient-text">Davide</span>
+          <span class="h1-line">Oliverio</span>
+        </h1>
+        <p class="hero-text">
+          Costruisco prodotti web, API, dashboard operative e automazioni enterprise su stack Microsoft.
+          Dalla UI al backend, dai dati ai processi: tutto connesso, tutto funzionante.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#clepsydra">
+            <span>Vedi Clepsydra</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="button ghost" href="#progetti">Altri progetti</a>
+        </div>
+      </div>
+
+      <aside class="signal-panel reveal" aria-label="Sintesi profilo">
+        <div class="signal-card featured">
+          <div class="signal-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <span class="metric-value">.NET 9</span>
+          <span class="metric-label">ASP.NET Core &middot; Blazor WASM &middot; API REST</span>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <span class="metric-value">RPA</span>
+          <span class="metric-label">Selenium &middot; FlaUI &middot; SAP &middot; Dynamics</span>
+        </div>
+        <div class="signal-card">
+          <div class="signal-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <span class="metric-value">Azure</span>
+          <span class="metric-label">Blob &middot; Queues &middot; Containers &middot; DevOps</span>
+        </div>
+        <div class="signal-card signal-links">
+          <a href="https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba" target="_blank" rel="noopener" class="signal-link-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://reeng.tech/it/" target="_blank" rel="noopener" class="signal-link-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Reengineering srl
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" aria-label="Tecnologie principali">
+    <div class="marquee-track">
+      <span>C#</span><span>.NET 9</span><span>Blazor WASM</span><span>Blazor Server</span>
+      <span>ASP.NET Core</span><span>SQL Server</span><span>Entity Framework</span>
+      <span>Hangfire</span><span>SignalR</span><span>Azure Storage</span><span>MAUI</span>
+      <span>RPA</span><span>Selenium</span><span>FlaUI</span><span>Syncfusion</span>
+      <span>MudBlazor</span><span>SAP</span><span>Dynamics</span><span>Navision</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="section intro-section" aria-label="Profilo">
+    <div class="intro-inner">
+      <div class="intro-left reveal">
+        <p class="section-kicker">Profilo</p>
+        <div class="intro-stat-row">
+          <div class="intro-stat"><span class="stat-num">2+</span><span class="stat-lbl">anni enterprise</span></div>
+          <div class="intro-stat"><span class="stat-num">6+</span><span class="stat-lbl">progetti live</span></div>
+          <div class="intro-stat"><span class="stat-num">50+</span><span class="stat-lbl">controller API</span></div>
+        </div>
+      </div>
+      <div class="intro-right reveal">
+        <h2>Sviluppo software che tiene insieme prodotto, dati e automazione.</h2>
+        <p>
+          Lavoro su PWA, microservizi, job asincroni, report, stampa locale, gestione documentale e bot RPA.
+          Creo strumenti che entrano davvero nel flusso operativo: dashboard leggibili, backend robusti
+          e automazioni che eliminano le attivit&agrave; ripetitive.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLEPSYDRA -->
+  <section class="section featured-section" id="clepsydra" aria-labelledby="clepsydra-title">
+    <div class="featured-header reveal">
+      <p class="section-kicker">Progetto di punta</p>
+      <h2 id="clepsydra-title">Clepsydra</h2>
+      <p class="featured-sub">Gestionale modulare enterprise su Blazor e .NET &mdash; costruito da zero, in produzione.</p>
+    </div>
+
+    <div class="featured-body">
+      <div class="featured-desc reveal">
+        <p>
+          Una piattaforma enterprise composta da client Blazor WebAssembly, API ASP.NET Core, layer applicativo
+          condiviso, database SQL Server, job scheduler Hangfire, moduli di inventory, documenti, listini,
+          riparazioni, workstations, voucher, reportistica e integrazioni con stampa locale.
+        </p>
+        <div class="feature-pills">
+          <span>.NET 9</span><span>Blazor WASM</span><span>MudBlazor</span>
+          <span>ASP.NET Core API</span><span>Entity Framework</span><span>Hangfire</span>
+          <span>SignalR</span><span>Azure Blob/Queues</span><span>MAUI</span>
+        </div>
+      </div>
+
+      <div class="architecture-board reveal" aria-label="Architettura Clepsydra">
+        <div class="arch-node primary-node">
+          <span class="arch-tag">Client</span>
+          <strong>Blazor WASM</strong>
+          <small>MudBlazor, PWA, routing, validazione, SignalR client</small>
+        </div>
+        <div class="arch-node">
+          <span class="arch-tag">Server</span>
+          <strong>API REST</strong>
+          <small>ASP.NET Core, JWT, versioning, Serilog, OpenAPI</small>
+        </div>
+        <div class="arch-node">
+          <span class="arch-tag">Jobs</span>
+          <strong>Hangfire</strong>
+          <small>export, documenti, report, inventory, task schedulati</small>
+        </div>
+        <div class="arch-node">
+          <span class="arch-tag">Data</span>
+          <strong>SQL Server</strong>
+          <small>Entity Framework, Dapper, repository, query applicative</small>
+        </div>
+        <div class="arch-node">
+          <span class="arch-tag">Edge</span>
+          <strong>Printer API</strong>
+          <small>agent locale, updater, ESC/POS USB, workstations</small>
+        </div>
+        <div class="arch-node">
+          <span class="arch-tag">Cloud</span>
+          <strong>Azure</strong>
+          <small>storage, queues, secrets, container-ready services</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="proof-row">
+      <div class="proof-item reveal">
+        <span class="proof-num">50+</span>
+        <p>controller e aree funzionali tra identity, catalogo, dashboard, documenti e stock.</p>
+      </div>
+      <div class="proof-item reveal">
+        <span class="proof-num">8+</span>
+        <p>progetti di test su application, client, infrastructure, printer API e shared.</p>
+      </div>
+      <div class="proof-item reveal">
+        <span class="proof-num">multi&#8209;client</span>
+        <p>web, mobile MAUI, API, job scheduler, servizi condivisi e agent di stampa locale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGETTI -->
+  <section class="section" id="progetti" aria-labelledby="projects-title">
+    <div class="section-head reveal">
+      <p class="section-kicker">Progetti</p>
+      <h2 id="projects-title">Casi reali, impatto concreto.</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card reveal" style="--accent:var(--cyan)">
+        <div class="project-topline"><span>Clepsydra</span><span>Product engineering</span></div>
+        <h3>Gestionale enterprise end-to-end</h3>
+        <p>Architettura modulare con Blazor WASM, API .NET 9, job Hangfire, Azure Storage/Queues e suite di test.</p>
+        <div class="card-footer">
+          <span class="tech-tag">.NET 9</span><span class="tech-tag">Blazor</span><span class="tech-tag">Azure</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:var(--blue)">
+        <div class="project-topline"><span>Fedrigoni Inventory</span><span>RPA Platform</span></div>
+        <h3>Inventory con bot orchestrati</h3>
+        <p>Bot multipli, dashboard Blazor/Syncfusion, automazioni SAP/Navision, Microsoft Graph e SharePoint.</p>
+        <div class="card-footer">
+          <span class="tech-tag">RPA</span><span class="tech-tag">SAP</span><span class="tech-tag">Syncfusion</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:var(--green)">
+        <div class="project-topline"><span>Sielte WBE Scarto</span><span>Dynamics &middot; Selenium</span></div>
+        <h3>Gestione scarti operativi</h3>
+        <p>Automazioni su portali web e Microsoft Dynamics, Blazor con Syncfusion, storico ed export Excel.</p>
+        <div class="card-footer">
+          <span class="tech-tag">Selenium</span><span class="tech-tag">Dynamics</span><span class="tech-tag">Blazor</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:var(--gold)">
+        <div class="project-topline"><span>TIM Commissioning</span><span>Excel engine</span></div>
+        <h3>File complessi e incassi</h3>
+        <p>Produzione massiva Excel con Syncfusion XlsIO, mapping Dynamics, calcoli e workflow da dashboard.</p>
+        <div class="card-footer">
+          <span class="tech-tag">XlsIO</span><span class="tech-tag">Dynamics</span><span class="tech-tag">C#</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:var(--red)">
+        <div class="project-topline"><span>Pandora</span><span>AI &middot; Azure SaaS</span></div>
+        <h3>Moduli IA per PWA</h3>
+        <p>Integrazione API ChatGPT, comandi vocali/testuali, Blazor WASM e deploy containerizzato Azure.</p>
+        <div class="card-footer">
+          <span class="tech-tag">ChatGPT API</span><span class="tech-tag">Blazor</span><span class="tech-tag">Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal" style="--accent:var(--violet)">
+        <div class="project-topline"><span>Graphicscalve</span><span>Blazor &middot; Web API</span></div>
+        <h3>Preventivatore e configuratore</h3>
+        <p>Blazor Server con SSO via Clockify (OAuth2/OIDC), JWT sulle API REST, CRUD dinamici, DevExpress, NUnit e deploy DMZ.</p>
+        <div class="card-footer">
+          <span class="tech-tag">Clockify SSO</span><span class="tech-tag">JWT</span><span class="tech-tag">DevExpress</span><span class="tech-tag">NUnit</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+    <div class="section-head reveal">
+      <p class="section-kicker">Stack</p>
+      <h2 id="stack-title">Tecnologie che uso per costruire, integrare e automatizzare.</h2>
+    </div>
+    <div class="stack-board reveal">
+      <div class="stack-col">
+        <h3>Backend</h3>
+        <span>C#</span><span>.NET 8 / .NET 9</span><span>ASP.NET Core Web API</span>
+        <span>MediatR</span><span>Entity Framework Core</span><span>Dapper</span>
+      </div>
+      <div class="stack-col">
+        <h3>Frontend</h3>
+        <span>Blazor Server</span><span>Blazor WebAssembly</span><span>PWA</span>
+        <span>MudBlazor</span><span>Syncfusion</span><span>DevExpress</span>
+      </div>
+      <div class="stack-col">
+        <h3>Automation</h3>
+        <span>RPA Platform</span><span>Selenium</span><span>FlaUI</span>
+        <span>SAP</span><span>Microsoft Dynamics</span><span>Navision</span>
+      </div>
+      <div class="stack-col">
+        <h3>Auth &amp; Identity</h3>
+        <span>Clockify SSO</span><span>OAuth2 / OIDC</span><span>JWT</span>
+        <span>Keycloak</span><span>ASP.NET Identity</span>
+      </div>
+      <div class="stack-col">
+        <h3>Cloud &amp; DevOps</h3>
+        <span>Azure DevOps</span><span>Docker</span><span>Azure Container Apps</span>
+        <span>Azure Storage</span><span>Jenkins</span><span>Octopus Deploy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPERIENZA -->
+  <section class="section timeline-section" id="esperienza" aria-labelledby="exp-title">
+    <div class="section-head reveal">
+      <p class="section-kicker">Esperienza</p>
+      <h2 id="exp-title">Dal codice al rilascio, dentro ambienti enterprise.</h2>
+    </div>
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <div class="tl-date">Set 2023 &ndash; oggi</div>
+        <div class="tl-body">
+          <h3>Reengineering S.r.l</h3>
+          <p class="tl-role">Microsoft Full-Stack Developer / RPA Developer</p>
+          <p>Sviluppo di applicazioni web PWA, API REST, gestionali enterprise, integrazioni IA e automazioni RPA con focus su Blazor, ASP.NET Core, SQL Server e processi reali.</p>
+          <a href="https://reeng.tech/it/" target="_blank" rel="noopener" class="tl-link">
+            reeng.tech
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="timeline-item reveal">
+        <div class="tl-date">Formazione</div>
+        <div class="tl-body">
+          <h3>Laurea L-31</h3>
+          <p class="tl-role">Universit&agrave; della Calabria</p>
+          <p>Informatica, programmazione a oggetti, basi di dati, sistemi web, intelligenza artificiale, algoritmi, reti e sistemi distribuiti.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="section contact-section" id="contatti" aria-labelledby="contact-title">
+    <div class="contact-inner reveal">
+      <div class="contact-copy">
+        <p class="section-kicker">Contatti</p>
+        <h2 id="contact-title">Hai un gestionale, una dashboard o un processo da automatizzare?</h2>
+        <p>Sono basato in Italia e lavoro su soluzioni full-stack, integrazioni enterprise, job asincroni e automazioni operative ad alto impatto.</p>
+      </div>
+      <div class="contact-links">
+        <a class="contact-card" href="mailto:antoolli49@gmail.com">
+          <div class="cc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <span class="cc-label">Email</span>
+            <span class="cc-value">antoolli49@gmail.com</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba" target="_blank" rel="noopener">
+          <div class="cc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">antonio-davide-oliverio</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://reeng.tech/it/" target="_blank" rel="noopener">
+          <div class="cc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <span class="cc-label">Azienda</span>
+            <span class="cc-value">reeng.tech</span>
+          </div>
+        </a>
+        <a class="contact-card download-cv" href="CV_Oliverio_Antonio_Davide_Portfolio.docx">
+          <div class="cc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div>
+            <span class="cc-label">Curriculum</span>
+            <span class="cc-value">Scarica CV</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; 2025 Antonio Davide Oliverio</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://reeng.tech/it/" target="_blank" rel="noopener">Reengineering srl</a>
+      <a href="mailto:antoolli49@gmail.com">antoolli49@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
