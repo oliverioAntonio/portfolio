@@ -109,6 +109,33 @@ body::before {
 .site-nav a:hover { color: var(--ink); background: rgba(255,255,255,0.07); }
 
 .header-links { display: flex; align-items: center; gap: 6px; }
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 58px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.035);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 150ms, border-color 150ms, background 150ms;
+}
+.lang-toggle:hover,
+.lang-toggle[aria-pressed="true"] {
+  color: var(--cyan);
+  border-color: rgba(46,232,245,0.55);
+  background: var(--cyan-dim);
+}
+.lang-current { color: var(--ink); }
+.lang-toggle[aria-pressed="true"] .lang-current { color: var(--cyan); }
+.lang-separator { color: var(--line-hi); }
 .icon-link {
   display: grid; place-items: center;
   width: 36px; height: 36px; border-radius: 8px;
