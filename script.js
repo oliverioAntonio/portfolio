@@ -4,6 +4,7 @@
 const canvas = document.getElementById("hero-canvas");
 const ctx = canvas.getContext("2d");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const prefersLight = window.matchMedia("(prefers-color-scheme: light)");
 
 let W = 0, H = 0, nodes = [], raf = null;
 let pointer = { x: -9999, y: -9999, active: false };
@@ -33,6 +34,17 @@ function spawnNodes() {
 
 function lerp(a, b, t) { return a + (b - a) * t; }
 
+function isLightTheme() {
+  return document.documentElement.dataset.theme === "light";
+}
+
+function particleColor(kind, alpha) {
+  const colors = isLightTheme()
+    ? { link: "0,127,141", cursor: "21,136,95", dot: "0,127,141" }
+    : { link: "46,232,245", cursor: "77,240,160", dot: "46,232,245" };
+  return `rgba(${colors[kind]},${alpha})`;
+}
+
 function frame() {
   ctx.clearRect(0, 0, W, H);
 
@@ -56,7 +68,7 @@ function frame() {
       const d  = Math.sqrt(dx * dx + dy * dy);
       if (d < LINK_DIST) {
         const a = 0.16 * (1 - d / LINK_DIST);
-        ctx.strokeStyle = `rgba(46,232,245,${a})`;
+        ctx.strokeStyle = particleColor("link", a);
         ctx.lineWidth   = 0.8;
         ctx.beginPath();
         ctx.moveTo(n.x, n.y);
@@ -71,7 +83,7 @@ function frame() {
       const d  = Math.sqrt(dx * dx + dy * dy);
       if (d < CURSOR_DIST) {
         const a = 0.35 * (1 - d / CURSOR_DIST);
-        ctx.strokeStyle = `rgba(77,240,160,${a})`;
+        ctx.strokeStyle = particleColor("cursor", a);
         ctx.lineWidth   = 1;
         ctx.beginPath();
         ctx.moveTo(pointer.x, pointer.y);
@@ -85,7 +97,7 @@ function frame() {
       ? lerp(0.35, 0.9, 1 - Math.min(
           Math.sqrt((n.x-pointer.x)**2+(n.y-pointer.y)**2) / CURSOR_DIST, 1))
       : 0.45;
-    ctx.fillStyle = `rgba(46,232,245,${alpha})`;
+    ctx.fillStyle = particleColor("dot", alpha);
     ctx.beginPath();
     ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
     ctx.fill();
@@ -145,6 +157,7 @@ document.addEventListener("click", e => {
    ======================== */
 const langToggle = document.querySelector(".lang-toggle");
 const langCurrent = document.querySelector(".lang-current");
+const themeToggle = document.querySelector(".theme-toggle");
 const metaDescription = document.querySelector("meta[name='description']");
 var linkedinPosts = [];
 
@@ -389,6 +402,27 @@ applyLanguage(initialLanguage);
 langToggle?.addEventListener("click", () => {
   const nextLanguage = document.documentElement.lang === "en" ? "it" : "en";
   applyLanguage(nextLanguage);
+});
+
+function applyTheme(theme) {
+  const nextTheme = theme === "light" ? "light" : "dark";
+  document.documentElement.dataset.theme = nextTheme;
+  localStorage.setItem("portfolio-theme", nextTheme);
+
+  if (themeToggle) {
+    const isLight = nextTheme === "light";
+    themeToggle.setAttribute("aria-pressed", String(isLight));
+    themeToggle.setAttribute("aria-label", isLight ? "Attiva tema scuro" : "Attiva tema chiaro");
+  }
+
+  if (reduceMotion) frame();
+}
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+applyTheme(savedTheme || (prefersLight.matches ? "light" : "dark"));
+
+themeToggle?.addEventListener("click", () => {
+  applyTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
 });
 
 /* ========================
