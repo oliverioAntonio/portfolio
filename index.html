@@ -24,6 +24,7 @@
   <nav class="site-nav" aria-label="Navigazione principale">
     <a href="#clepsydra">Clepsydra</a>
     <a href="#progetti">Progetti</a>
+    <a href="#linkedin">LinkedIn</a>
     <a href="#stack">Stack</a>
     <a href="#contatti">Contatti</a>
   </nav>
@@ -61,6 +62,11 @@
           Costruisco prodotti web, API, dashboard operative e automazioni enterprise su stack Microsoft.
           Dalla UI al backend, dai dati ai processi: tutto connesso, tutto funzionante.
         </p>
+        <div class="hero-proof" aria-label="Punti di forza">
+          <span>Produzione enterprise</span>
+          <span>Blazor + .NET</span>
+          <span>RPA su processi reali</span>
+        </div>
         <div class="hero-actions">
           <a class="button primary" href="#clepsydra">
             <span>Vedi Clepsydra</span>
@@ -75,8 +81,8 @@
           <div class="signal-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <span class="metric-value">.NET 9</span>
-          <span class="metric-label">ASP.NET Core &middot; Blazor WASM &middot; API REST</span>
+          <span class="metric-value">Ship</span>
+          <span class="metric-label">prodotti completi: UI, API, dati, job e automazioni</span>
         </div>
         <div class="signal-card">
           <div class="signal-icon">
@@ -135,6 +141,20 @@
           Creo strumenti che entrano davvero nel flusso operativo: dashboard leggibili, backend robusti
           e automazioni che eliminano le attivit&agrave; ripetitive.
         </p>
+        <div class="recruiter-strip" aria-label="Sintesi per recruiter">
+          <div>
+            <strong>Focus</strong>
+            <span>Full-stack Microsoft con mentalit&agrave; prodotto.</span>
+          </div>
+          <div>
+            <strong>Impatto</strong>
+            <span>Riduzione lavoro manuale tramite RPA e workflow web.</span>
+          </div>
+          <div>
+            <strong>Metodo</strong>
+            <span>Codice testabile, release, troubleshooting e team Agile.</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -143,71 +163,85 @@
   <section class="section featured-section" id="clepsydra" aria-labelledby="clepsydra-title">
     <div class="featured-header reveal">
       <p class="section-kicker">Progetto di punta</p>
-      <h2 id="clepsydra-title">Clepsydra</h2>
-      <p class="featured-sub">Gestionale modulare enterprise su Blazor e .NET &mdash; costruito da zero, in produzione.</p>
+      <h2 id="clepsydra-title">Clepsydra / LuxyTime</h2>
+      <p class="featured-sub">Gestionale cloud-native per gioiellerie e retail orafo: Blazor, .NET, Azure e integrazione SAP.</p>
     </div>
 
     <div class="featured-body">
       <div class="featured-desc reveal">
         <p>
-          Una piattaforma enterprise composta da client Blazor WebAssembly, API ASP.NET Core, layer applicativo
-          condiviso, database SQL Server, job scheduler Hangfire, moduli di inventory, documenti, listini,
-          riparazioni, workstations, voucher, reportistica e integrazioni con stampa locale.
+          Una piattaforma enterprise per boutique, showroom e laboratori del settore orafo: vendite, magazzino,
+          logistica, gift card, promozioni, inventario, documenti, dispositivi fisici e supervisione multi-sede.
+          Il prodotto pubblico &egrave; LuxyTime; Clepsydra rappresenta il cuore tecnico e modulare del gestionale.
         </p>
         <div class="feature-pills">
-          <span>.NET 9</span><span>Blazor WASM</span><span>MudBlazor</span>
-          <span>ASP.NET Core API</span><span>Entity Framework</span><span>Hangfire</span>
-          <span>SignalR</span><span>Azure Blob/Queues</span><span>MAUI</span>
+          <span>Blazor PWA</span><span>.NET 8/9 Web API</span><span>Azure SQL</span>
+          <span>Azure Container Apps</span><span>CI/CD Azure DevOps</span><span>JWT</span>
+          <span>SAP integration</span><span>Barcode/RFID</span><span>Offline mode</span>
         </div>
+        <a class="case-link" href="https://reeng.tech/it/luxytime-software" target="_blank" rel="noopener">Scheda pubblica LuxyTime</a>
       </div>
 
       <div class="architecture-board reveal" aria-label="Architettura Clepsydra">
         <div class="arch-node primary-node">
           <span class="arch-tag">Client</span>
           <strong>Blazor WASM</strong>
-          <small>MudBlazor, PWA, routing, validazione, SignalR client</small>
+          <small>PWA responsive, browser desktop/mobile, operativit&agrave; offline</small>
         </div>
         <div class="arch-node">
           <span class="arch-tag">Server</span>
-          <strong>API REST</strong>
-          <small>ASP.NET Core, JWT, versioning, Serilog, OpenAPI</small>
+          <strong>.NET Web API</strong>
+          <small>REST modulare, JWT, audit trail, ruoli e ambienti separati</small>
         </div>
         <div class="arch-node">
-          <span class="arch-tag">Jobs</span>
-          <strong>Hangfire</strong>
-          <small>export, documenti, report, inventory, task schedulati</small>
+          <span class="arch-tag">Retail</span>
+          <strong>Workflow store</strong>
+          <small>vendite, resi, gift card, trasferimenti, inventario</small>
         </div>
         <div class="arch-node">
           <span class="arch-tag">Data</span>
-          <strong>SQL Server</strong>
-          <small>Entity Framework, Dapper, repository, query applicative</small>
+          <strong>Azure SQL</strong>
+          <small>isolamento tenant, tracciabilit&agrave;, integrit&agrave; e BI-ready data</small>
         </div>
         <div class="arch-node">
-          <span class="arch-tag">Edge</span>
-          <strong>Printer API</strong>
-          <small>agent locale, updater, ESC/POS USB, workstations</small>
+          <span class="arch-tag">Devices</span>
+          <strong>Store hardware</strong>
+          <small>stampanti fiscali, barcode e RFID direttamente via web</small>
         </div>
         <div class="arch-node">
           <span class="arch-tag">Cloud</span>
-          <strong>Azure</strong>
-          <small>storage, queues, secrets, container-ready services</small>
+          <strong>Container Apps</strong>
+          <small>deploy cloud-native, ACR, scalabilit&agrave; e pipeline YAML</small>
         </div>
       </div>
     </div>
 
     <div class="proof-row">
       <div class="proof-item reveal">
-        <span class="proof-num">50+</span>
-        <p>controller e aree funzionali tra identity, catalogo, dashboard, documenti e stock.</p>
+        <span class="proof-num">multi&#8209;sede</span>
+        <p>gestione centralizzata con sedi autonome, visione unificata e sincronizzazione in tempo reale.</p>
       </div>
       <div class="proof-item reveal">
-        <span class="proof-num">8+</span>
-        <p>progetti di test su application, client, infrastructure, printer API e shared.</p>
+        <span class="proof-num">SAP</span>
+        <p>integrazione bidirezionale e automazione dei flussi tra boutique, magazzino e sistemi centrali.</p>
       </div>
       <div class="proof-item reveal">
-        <span class="proof-num">multi&#8209;client</span>
-        <p>web, mobile MAUI, API, job scheduler, servizi condivisi e agent di stampa locale.</p>
+        <span class="proof-num">offline</span>
+        <p>continuit&agrave; operativa da browser anche quando la rete non &egrave; stabile.</p>
       </div>
+    </div>
+
+    <div class="case-study-row reveal" aria-label="Case study LuxyTime">
+      <a class="case-study-card" href="https://reeng.tech/it/case-study-scintille" target="_blank" rel="noopener">
+        <span>Case study</span>
+        <strong>Scintille</strong>
+        <small>rete vendita gioiellerie, multi-sede, SAP, trasferimenti merce e stock in tempo reale</small>
+      </a>
+      <a class="case-study-card" href="https://reeng.tech/it/case-study-rocca-damiani" target="_blank" rel="noopener">
+        <span>Case study</span>
+        <strong>Rocca Damiani</strong>
+        <small>boutique luxury retail, integrazione SAP, modalit&agrave; offline e tracciabilit&agrave; articoli</small>
+      </a>
     </div>
   </section>
 
@@ -219,11 +253,11 @@
     </div>
     <div class="project-grid">
       <article class="project-card reveal" style="--accent:var(--cyan)">
-        <div class="project-topline"><span>Clepsydra</span><span>Product engineering</span></div>
-        <h3>Gestionale enterprise end-to-end</h3>
-        <p>Architettura modulare con Blazor WASM, API .NET 9, job Hangfire, Azure Storage/Queues e suite di test.</p>
+        <div class="project-topline"><span>LuxyTime</span><span>Retail orafo</span></div>
+        <h3>Gestionale cloud-native per gioiellerie</h3>
+        <p>PWA Blazor, API .NET, Azure SQL, Container Apps, CI/CD e integrazione SAP per vendite, stock, logistica e dispositivi retail.</p>
         <div class="card-footer">
-          <span class="tech-tag">.NET 9</span><span class="tech-tag">Blazor</span><span class="tech-tag">Azure</span>
+          <span class="tech-tag">Blazor PWA</span><span class="tech-tag">.NET API</span><span class="tech-tag">SAP</span><span class="tech-tag">Azure</span>
         </div>
       </article>
 
@@ -280,6 +314,28 @@
           <span class="tech-tag">.NET 8</span><span class="tech-tag">REST API</span><span class="tech-tag">Migration</span><span class="tech-tag">MongoDB</span><span class="tech-tag">SQL Server</span><span class="tech-tag">Jenkins</span>
         </div>
       </article>
+    </div>
+  </section>
+
+  <!-- LINKEDIN / UPDATES -->
+  <section class="section updates-section" id="linkedin" aria-labelledby="linkedin-title">
+    <div class="updates-layout">
+      <div class="updates-copy reveal">
+        <p class="section-kicker">LinkedIn live</p>
+        <h2 id="linkedin-title">Quello che pubblico, qui diventa portfolio vivo.</h2>
+        <p>
+          Questa sezione legge gli aggiornamenti da un file dati: quando aggiungi un post LinkedIn,
+          il portfolio pu&ograve; mostrarlo con titolo, tag e link diretto.
+        </p>
+        <a class="button ghost" href="https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba/recent-activity/all/" target="_blank" rel="noopener">Apri attivit&agrave; LinkedIn</a>
+      </div>
+      <div class="updates-feed reveal" data-linkedin-feed>
+        <article class="update-card update-card-empty">
+          <span class="update-date">Sync ready</span>
+          <h3>Feed pronto per i post LinkedIn</h3>
+          <p>Pubblica un aggiornamento, aggiungi il link nel file dati e comparir&agrave; qui.</p>
+        </article>
+      </div>
     </div>
   </section>
 

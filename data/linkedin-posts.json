@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-06-27",
+    "title": "Clepsydra: piattaforma gestionale enterprise in Blazor e .NET",
+    "summary": "Un aggiornamento sintetico sul progetto di punta: architettura modulare, API, job asincroni, Azure Storage e automazioni operative.",
+    "tags": [".NET", "Blazor", "Enterprise"],
+    "url": "https://www.linkedin.com/company/reengineering/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3BOcsx5K%2BQSVKN2%2FKivRbgNQ%3D%3D"
+  },
+  {
+    "date": "2026-06-27",
+    "title": "RPA applicata a processi reali",
+    "summary": "Automazioni con Selenium, FlaUI, SAP, Dynamics e dashboard per ridurre operazioni ripetitive e aumentare controllo sui flussi.",
+    "tags": ["RPA", "Automation", "C#"],
+    "url": "https://www.linkedin.com/in/antonio-davide-oliverio-5749a11ba/recent-activity/all/"
+  }
+]
